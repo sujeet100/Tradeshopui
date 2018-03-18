@@ -1,3 +1,6 @@
-const GET_PRODUCTS = 'GET_PRODUCTS';
+const actionTypes = {
+  GET_PRODUCTS: 'GET_PRODUCTS',
+  GET_PRODUCTS_RECEIVED: 'GET_PRODUCTS_RECEIVED',
+};
 
-export default GET_PRODUCTS;
+export default actionTypes;

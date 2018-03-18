@@ -1,13 +1,13 @@
 import { connect } from 'react-redux';
 import ProductListing from '../components/product-listing/productListing';
-import { getProducts } from '../actions/productListingActions';
+import { viewProducts } from '../actions/productListingActions';
 
 const mapStateToProps = state => ({
   products: state.getProducts.products
 });
 
 const mapDispatchToProps = dispatch => ({
-  getProducts: () => dispatch(getProducts())
+  viewProducts: () => dispatch(viewProducts())
 });
 
 export default connect(

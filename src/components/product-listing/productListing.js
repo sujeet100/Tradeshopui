@@ -5,12 +5,12 @@ import Product from './product';
 class ProductListing extends Component {
   static propTypes = {
     products: PropTypes.array.isRequired,
-    getProducts: PropTypes.func.isRequired,
+    viewProducts: PropTypes.func.isRequired,
   };
 
   componentDidMount() {
-    const { getProducts } = this.props;
-    getProducts();
+    const { viewProducts } = this.props;
+    viewProducts();
   }
 
   render() {
