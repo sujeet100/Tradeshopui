@@ -2,6 +2,7 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import logo from './logo.svg';
 import './App.css';
+import './styles/app.scss';
 import store from './store';
 import ProductListingContainer from './containers/productListingContainer';
 

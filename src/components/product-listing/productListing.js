@@ -16,9 +16,9 @@ class ProductListing extends Component {
   render() {
     const { products } = this.props;
     return (
-      <div>
+      <div className="products-container">
         {products.map(product =>
-          <Product key={product.sku} productName={product.name} description={product.description} price={product.price} />)}
+          <Product key={product.sku} productName={product.name} description={product.description} price={product.price} image={product.imagePath} />)}
       </div>
     );
   }
